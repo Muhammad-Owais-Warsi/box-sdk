@@ -25,9 +25,7 @@ The full API of this library can be found in [api.md](api.md).
 ```js
 import NimbusStorage from 'nimbus-storage';
 
-const client = new NimbusStorage({
-  apiKey: process.env['NIMBUS_STORAGE_API_KEY'], // This is the default and can be omitted
-});
+const client = new NimbusStorage();
 
 const response = await client.authorize.request({ client_id: 'REPLACE_ME', response_type: 'code' });
 ```
@@ -40,9 +38,7 @@ This library includes TypeScript definitions for all request params and response
 ```ts
 import NimbusStorage from 'nimbus-storage';
 
-const client = new NimbusStorage({
-  apiKey: process.env['NIMBUS_STORAGE_API_KEY'], // This is the default and can be omitted
-});
+const client = new NimbusStorage();
 
 const params: NimbusStorage.AuthorizeRequestParams = { client_id: 'REPLACE_ME', response_type: 'code' };
 const response: string = await client.authorize.request(params);
