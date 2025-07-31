@@ -137,10 +137,11 @@ describe('resource uploadSessions', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('uploadPart: only required params', async () => {
-    const responsePromise = client.files.uploadSessions.uploadPart('D5E3F7A', {
-      'content-range': 'bytes 8388608-16777215/445856194',
-      digest: 'sha=fpRyg5eVQletdZqEKaFlqwBXJzM=',
-    });
+    const responsePromise = client.files.uploadSessions.uploadPart(
+      'D5E3F7A',
+      await toFile(Buffer.from('# my file contents'), 'README.md'),
+      { 'content-range': 'bytes 8388608-16777215/445856194', digest: 'sha=fpRyg5eVQletdZqEKaFlqwBXJzM=' },
+    );
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -152,10 +153,10 @@ describe('resource uploadSessions', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('uploadPart: required and optional params', async () => {
-    const response = await client.files.uploadSessions.uploadPart('D5E3F7A', {
-      'content-range': 'bytes 8388608-16777215/445856194',
-      digest: 'sha=fpRyg5eVQletdZqEKaFlqwBXJzM=',
-      body: await toFile(Buffer.from('# my file contents'), 'README.md'),
-    });
+    const response = await client.files.uploadSessions.uploadPart(
+      'D5E3F7A',
+      await toFile(Buffer.from('# my file contents'), 'README.md'),
+      { 'content-range': 'bytes 8388608-16777215/445856194', digest: 'sha=fpRyg5eVQletdZqEKaFlqwBXJzM=' },
+    );
   });
 });
