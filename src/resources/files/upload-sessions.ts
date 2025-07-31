@@ -169,18 +169,23 @@ export class UploadSessions extends APIResource {
    * @example
    * ```ts
    * const response =
-   *   await client.files.uploadSessions.uploadPart('D5E3F7A', {
-   *     'content-range': 'bytes 8388608-16777215/445856194',
-   *     digest: 'sha=fpRyg5eVQletdZqEKaFlqwBXJzM=',
-   *   });
+   *   await client.files.uploadSessions.uploadPart(
+   *     'D5E3F7A',
+   *     fs.createReadStream('path/to/file'),
+   *     {
+   *       'content-range': 'bytes 8388608-16777215/445856194',
+   *       digest: 'sha=fpRyg5eVQletdZqEKaFlqwBXJzM=',
+   *     },
+   *   );
    * ```
    */
   uploadPart(
     uploadSessionID: string,
+    body: string | ArrayBuffer | ArrayBufferView | Blob | DataView,
     params: UploadSessionUploadPartParams,
     options?: RequestOptions,
   ): APIPromise<UploadSessionUploadPartResponse> {
-    const { 'content-range': contentRange, digest, body } = params;
+    const { 'content-range': contentRange, digest } = params;
     return this._client.put(path`/files/upload_sessions/${uploadSessionID}`, {
       body: body,
       defaultBaseURL: 'https://{box-upload-server}/api/2.0',
@@ -473,11 +478,6 @@ export interface UploadSessionUploadPartParams {
    * [1]: https://tools.ietf.org/html/rfc3230
    */
   digest: string;
-
-  /**
-   * Body param: The binary content of the file.
-   */
-  body?: string | ArrayBuffer | ArrayBufferView | Blob | DataView;
 }
 
 export declare namespace UploadSessions {

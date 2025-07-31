@@ -77,7 +77,7 @@ Methods:
 - <code title="get /files/upload_sessions/{upload_session_id}">client.files.uploadSessions.<a href="./src/resources/files/upload-sessions.ts">get</a>(uploadSessionID) -> UploadSession</code>
 - <code title="get /files/upload_sessions/{upload_session_id}/parts">client.files.uploadSessions.<a href="./src/resources/files/upload-sessions.ts">listParts</a>(uploadSessionID, { ...params }) -> UploadSessionListPartsResponse</code>
 - <code title="delete /files/upload_sessions/{upload_session_id}">client.files.uploadSessions.<a href="./src/resources/files/upload-sessions.ts">remove</a>(uploadSessionID) -> void</code>
-- <code title="put /files/upload_sessions/{upload_session_id}">client.files.uploadSessions.<a href="./src/resources/files/upload-sessions.ts">uploadPart</a>(uploadSessionID, { ...params }) -> UploadSessionUploadPartResponse</code>
+- <code title="put /files/upload_sessions/{upload_session_id}">client.files.uploadSessions.<a href="./src/resources/files/upload-sessions.ts">uploadPart</a>(uploadSessionID, body, { ...params }) -> UploadSessionUploadPartResponse</code>
 
 ## Trash
 
