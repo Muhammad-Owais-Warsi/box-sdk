@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource workflows', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.workflows.list({ folder_id: 'folder_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource workflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.workflows.list({
       folder_id: 'folder_id',
@@ -30,7 +30,7 @@ describe('resource workflows', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('start: only required params', async () => {
     const responsePromise = client.workflows.start('12345', { files: [{}], flow: {}, folder: {} });
     const rawResponse = await responsePromise.asResponse();
@@ -42,7 +42,7 @@ describe('resource workflows', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('start: required and optional params', async () => {
     const response = await client.workflows.start('12345', {
       files: [{ id: '12345678', type: 'file' }],

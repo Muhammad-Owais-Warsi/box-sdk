@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource folderLocks', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.folderLocks.create({ folder: { id: '1234567890', type: 'folder' } });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource folderLocks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.folderLocks.create({
       folder: { id: '1234567890', type: 'folder' },
@@ -28,7 +28,7 @@ describe('resource folderLocks', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.folderLocks.list({ folder_id: 'folder_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -40,12 +40,12 @@ describe('resource folderLocks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.folderLocks.list({ folder_id: 'folder_id' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.folderLocks.delete('12345');
     const rawResponse = await responsePromise.asResponse();

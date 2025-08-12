@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource avatar', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.users.avatar.update('12345', {
       pic: await toFile(Buffer.from('# my file contents'), 'README.md'),
@@ -22,14 +22,14 @@ describe('resource avatar', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.users.avatar.update('12345', {
       pic: await toFile(Buffer.from('# my file contents'), 'README.md'),
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.users.avatar.delete('12345');
     const rawResponse = await responsePromise.asResponse();

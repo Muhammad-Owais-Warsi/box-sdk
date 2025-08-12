@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource files', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.files.retrieve('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -37,7 +37,7 @@ describe('resource files', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.files.update('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -79,7 +79,7 @@ describe('resource files', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.files.delete('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -91,7 +91,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -99,7 +99,7 @@ describe('resource files', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('copy: only required params', async () => {
     const responsePromise = client.files.copy('12345', { parent: { id: '0' } });
     const rawResponse = await responsePromise.asResponse();
@@ -111,7 +111,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('copy: required and optional params', async () => {
     const response = await client.files.copy('12345', {
       parent: { id: '0' },
@@ -121,8 +121,7 @@ describe('resource files', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
-  test.skip('getThumbnail: required and optional params', async () => {
+  test('getThumbnail: required and optional params', async () => {
     const response = await client.files.getThumbnail('png', {
       file_id: '12345',
       max_height: 32,
@@ -132,7 +131,7 @@ describe('resource files', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppItemAssociations', async () => {
     const responsePromise = client.files.listAppItemAssociations('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -144,7 +143,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAppItemAssociations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -156,7 +155,7 @@ describe('resource files', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCollaborations', async () => {
     const responsePromise = client.files.listCollaborations('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -168,7 +167,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listCollaborations: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -180,7 +179,7 @@ describe('resource files', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listComments', async () => {
     const responsePromise = client.files.listComments('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -192,7 +191,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listComments: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -204,7 +203,7 @@ describe('resource files', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listTasks', async () => {
     const responsePromise = client.files.listTasks('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -216,7 +215,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('restore', async () => {
     const responsePromise = client.files.restore('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -228,7 +227,7 @@ describe('resource files', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('restore: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

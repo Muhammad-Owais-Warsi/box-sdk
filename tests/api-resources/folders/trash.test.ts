@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource trash', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getTrashedFolder', async () => {
     const responsePromise = client.folders.trash.getTrashedFolder('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource trash', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getTrashedFolder: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -32,7 +32,7 @@ describe('resource trash', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listTrashedItems', async () => {
     const responsePromise = client.folders.trash.listTrashedItems();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource trash', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listTrashedItems: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -63,7 +63,7 @@ describe('resource trash', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('permanentlyRemove', async () => {
     const responsePromise = client.folders.trash.permanentlyRemove('12345');
     const rawResponse = await responsePromise.asResponse();

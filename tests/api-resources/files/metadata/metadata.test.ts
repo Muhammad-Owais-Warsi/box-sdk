@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource metadata', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.files.metadata.create('properties', { file_id: '12345', scope: 'global' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.files.metadata.create('properties', {
       file_id: '12345',
@@ -29,7 +29,7 @@ describe('resource metadata', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.files.metadata.retrieve('properties', {
       file_id: '12345',
@@ -44,7 +44,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.files.metadata.retrieve('properties', {
       file_id: '12345',
@@ -52,7 +52,7 @@ describe('resource metadata', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.files.metadata.update('properties', { file_id: '12345', scope: 'global' });
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.files.metadata.update('properties', {
       file_id: '12345',
@@ -73,7 +73,7 @@ describe('resource metadata', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.files.metadata.list('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -85,7 +85,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.files.metadata.delete('properties', { file_id: '12345', scope: 'global' });
     const rawResponse = await responsePromise.asResponse();
@@ -97,7 +97,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.files.metadata.delete('properties', { file_id: '12345', scope: 'global' });
   });

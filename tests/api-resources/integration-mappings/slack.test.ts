@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource slack', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.integrationMappings.slack.create({
       box_item: { id: '1234567891', type: 'folder' },
@@ -23,7 +23,7 @@ describe('resource slack', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.integrationMappings.slack.create({
       box_item: { id: '1234567891', type: 'folder' },
@@ -37,7 +37,7 @@ describe('resource slack', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.integrationMappings.slack.update('11235432');
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource slack', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -61,7 +61,7 @@ describe('resource slack', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.integrationMappings.slack.list();
     const rawResponse = await responsePromise.asResponse();
@@ -73,7 +73,7 @@ describe('resource slack', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -92,7 +92,7 @@ describe('resource slack', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.integrationMappings.slack.delete('11235432');
     const rawResponse = await responsePromise.asResponse();

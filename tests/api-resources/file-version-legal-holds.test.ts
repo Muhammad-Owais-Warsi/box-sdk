@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource fileVersionLegalHolds', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.fileVersionLegalHolds.retrieve('2348213');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource fileVersionLegalHolds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.fileVersionLegalHolds.list({ policy_id: 'policy_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource fileVersionLegalHolds', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.fileVersionLegalHolds.list({
       policy_id: 'policy_id',

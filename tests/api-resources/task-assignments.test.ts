@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource taskAssignments', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.taskAssignments.create({
       assign_to: {},
@@ -23,7 +23,7 @@ describe('resource taskAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.taskAssignments.create({
       assign_to: { id: '3242343', login: 'john@example.com' },
@@ -31,7 +31,7 @@ describe('resource taskAssignments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.taskAssignments.retrieve('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -43,7 +43,7 @@ describe('resource taskAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.taskAssignments.update('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource taskAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -67,7 +67,7 @@ describe('resource taskAssignments', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.taskAssignments.delete('12345');
     const rawResponse = await responsePromise.asResponse();

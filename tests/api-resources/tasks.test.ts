@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource tasks', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.tasks.create({ item: {} });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource tasks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.tasks.create({
       item: { id: '11446498', type: 'file' },
@@ -31,7 +31,7 @@ describe('resource tasks', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.tasks.retrieve('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -43,7 +43,7 @@ describe('resource tasks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.tasks.update('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource tasks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -72,7 +72,7 @@ describe('resource tasks', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.tasks.delete('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -84,7 +84,7 @@ describe('resource tasks', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listAssignments', async () => {
     const responsePromise = client.tasks.listAssignments('12345');
     const rawResponse = await responsePromise.asResponse();

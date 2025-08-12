@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource termsOfServices', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.termsOfServices.create({
       status: 'enabled',
@@ -23,7 +23,7 @@ describe('resource termsOfServices', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.termsOfServices.create({
       status: 'enabled',
@@ -32,7 +32,7 @@ describe('resource termsOfServices', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.termsOfServices.retrieve('324234');
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource termsOfServices', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.termsOfServices.update('324234', {
       status: 'enabled',
@@ -59,7 +59,7 @@ describe('resource termsOfServices', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.termsOfServices.update('324234', {
       status: 'enabled',
@@ -67,7 +67,7 @@ describe('resource termsOfServices', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.termsOfServices.list();
     const rawResponse = await responsePromise.asResponse();
@@ -79,7 +79,7 @@ describe('resource termsOfServices', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

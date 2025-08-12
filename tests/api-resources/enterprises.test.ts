@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource enterprises', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listDevicePinners', async () => {
     const responsePromise = client.enterprises.listDevicePinners('3442311');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource enterprises', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listDevicePinners: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

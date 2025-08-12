@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource boxSkillsCards', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.files.metadata.global.boxSkillsCards.create('12345', {
       cards: [
@@ -30,7 +30,7 @@ describe('resource boxSkillsCards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.files.metadata.global.boxSkillsCards.create('12345', {
       cards: [
@@ -47,7 +47,7 @@ describe('resource boxSkillsCards', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.files.metadata.global.boxSkillsCards.update('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -59,7 +59,7 @@ describe('resource boxSkillsCards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -87,7 +87,7 @@ describe('resource boxSkillsCards', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.files.metadata.global.boxSkillsCards.list('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -99,7 +99,7 @@ describe('resource boxSkillsCards', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('remove', async () => {
     const responsePromise = client.files.metadata.global.boxSkillsCards.remove('12345');
     const rawResponse = await responsePromise.asResponse();

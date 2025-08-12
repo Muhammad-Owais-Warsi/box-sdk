@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource watermark', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.files.watermark.retrieve('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource watermark', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('apply: only required params', async () => {
     const responsePromise = client.files.watermark.apply('12345', { watermark: { imprint: 'default' } });
     const rawResponse = await responsePromise.asResponse();
@@ -32,12 +32,12 @@ describe('resource watermark', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('apply: required and optional params', async () => {
     const response = await client.files.watermark.apply('12345', { watermark: { imprint: 'default' } });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('remove', async () => {
     const responsePromise = client.files.watermark.remove('12345');
     const rawResponse = await responsePromise.asResponse();

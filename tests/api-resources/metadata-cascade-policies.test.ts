@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource metadataCascadePolicies', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.metadataCascadePolicies.create({
       folder_id: '1234567',
@@ -24,7 +24,7 @@ describe('resource metadataCascadePolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.metadataCascadePolicies.create({
       folder_id: '1234567',
@@ -33,7 +33,7 @@ describe('resource metadataCascadePolicies', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.metadataCascadePolicies.retrieve('6fd4ff89-8fc1-42cf-8b29-1890dedd26d7');
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource metadataCascadePolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.metadataCascadePolicies.list({ folder_id: 'folder_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -57,7 +57,7 @@ describe('resource metadataCascadePolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.metadataCascadePolicies.list({
       folder_id: 'folder_id',
@@ -67,7 +67,7 @@ describe('resource metadataCascadePolicies', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.metadataCascadePolicies.delete('6fd4ff89-8fc1-42cf-8b29-1890dedd26d7');
     const rawResponse = await responsePromise.asResponse();
@@ -79,7 +79,7 @@ describe('resource metadataCascadePolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('apply: only required params', async () => {
     const responsePromise = client.metadataCascadePolicies.apply('6fd4ff89-8fc1-42cf-8b29-1890dedd26d7', {
       conflict_resolution: 'none',
@@ -93,7 +93,7 @@ describe('resource metadataCascadePolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('apply: required and optional params', async () => {
     const response = await client.metadataCascadePolicies.apply('6fd4ff89-8fc1-42cf-8b29-1890dedd26d7', {
       conflict_resolution: 'none',

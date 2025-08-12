@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource ai', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('askQuestion: only required params', async () => {
     const responsePromise = client.ai.askQuestion({
       items: [{ id: '123', type: 'file' }],
@@ -24,7 +24,7 @@ describe('resource ai', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('askQuestion: required and optional params', async () => {
     const response = await client.ai.askQuestion({
       items: [{ id: '123', type: 'file', content: 'This is file content.' }],
@@ -128,7 +128,7 @@ describe('resource ai', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('extractMetadata: only required params', async () => {
     const responsePromise = client.ai.extractMetadata({
       items: [{ id: '123', type: 'file' }],
@@ -144,7 +144,7 @@ describe('resource ai', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('extractMetadata: required and optional params', async () => {
     const response = await client.ai.extractMetadata({
       items: [{ id: '123', type: 'file', content: 'This is file content.' }],
@@ -154,7 +154,7 @@ describe('resource ai', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('extractStructuredMetadata: only required params', async () => {
     const responsePromise = client.ai.extractStructuredMetadata({ items: [{ id: '123', type: 'file' }] });
     const rawResponse = await responsePromise.asResponse();
@@ -166,7 +166,7 @@ describe('resource ai', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('extractStructuredMetadata: required and optional params', async () => {
     const response = await client.ai.extractStructuredMetadata({
       items: [{ id: '123', type: 'file', content: 'This is file content.' }],
@@ -189,7 +189,7 @@ describe('resource ai', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('generateText: only required params', async () => {
     const responsePromise = client.ai.generateText({
       items: [{ id: '123', type: 'file' }],
@@ -204,7 +204,7 @@ describe('resource ai', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('generateText: required and optional params', async () => {
     const response = await client.ai.generateText({
       items: [

@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource uploadSessions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.files.uploadSessions.create({
       file_name: 'Project.mov',
@@ -24,7 +24,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.files.uploadSessions.create({
       file_name: 'Project.mov',
@@ -33,7 +33,7 @@ describe('resource uploadSessions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('commit: only required params', async () => {
     const responsePromise = client.files.uploadSessions.commit('D5E3F7A', {
       parts: [{}],
@@ -48,7 +48,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('commit: required and optional params', async () => {
     const response = await client.files.uploadSessions.commit('D5E3F7A', {
       parts: [
@@ -65,7 +65,7 @@ describe('resource uploadSessions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('createForExistingFile: only required params', async () => {
     const responsePromise = client.files.uploadSessions.createForExistingFile('12345', {
       file_size: 104857600,
@@ -79,7 +79,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('createForExistingFile: required and optional params', async () => {
     const response = await client.files.uploadSessions.createForExistingFile('12345', {
       file_size: 104857600,
@@ -87,7 +87,7 @@ describe('resource uploadSessions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('get', async () => {
     const responsePromise = client.files.uploadSessions.get('D5E3F7A');
     const rawResponse = await responsePromise.asResponse();
@@ -99,7 +99,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listParts', async () => {
     const responsePromise = client.files.uploadSessions.listParts('D5E3F7A');
     const rawResponse = await responsePromise.asResponse();
@@ -111,7 +111,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listParts: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -123,7 +123,7 @@ describe('resource uploadSessions', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('remove', async () => {
     const responsePromise = client.files.uploadSessions.remove('D5E3F7A');
     const rawResponse = await responsePromise.asResponse();
@@ -135,7 +135,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('uploadPart: only required params', async () => {
     const responsePromise = client.files.uploadSessions.uploadPart(
       'D5E3F7A',
@@ -151,7 +151,7 @@ describe('resource uploadSessions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('uploadPart: required and optional params', async () => {
     const response = await client.files.uploadSessions.uploadPart(
       'D5E3F7A',
