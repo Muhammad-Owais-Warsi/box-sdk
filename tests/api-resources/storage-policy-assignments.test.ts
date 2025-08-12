@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource storagePolicyAssignments', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.storagePolicyAssignments.create({
       assigned_to: { id: '9987987', type: 'user' },
@@ -23,7 +23,7 @@ describe('resource storagePolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.storagePolicyAssignments.create({
       assigned_to: { id: '9987987', type: 'user' },
@@ -31,7 +31,7 @@ describe('resource storagePolicyAssignments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.storagePolicyAssignments.retrieve('932483');
     const rawResponse = await responsePromise.asResponse();
@@ -43,7 +43,7 @@ describe('resource storagePolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.storagePolicyAssignments.update('932483', {
       storage_policy: { id: '1434325', type: 'storage_policy' },
@@ -57,14 +57,14 @@ describe('resource storagePolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.storagePolicyAssignments.update('932483', {
       storage_policy: { id: '1434325', type: 'storage_policy' },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.storagePolicyAssignments.list({
       resolved_for_id: 'resolved_for_id',
@@ -79,7 +79,7 @@ describe('resource storagePolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.storagePolicyAssignments.list({
       resolved_for_id: 'resolved_for_id',
@@ -88,7 +88,7 @@ describe('resource storagePolicyAssignments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.storagePolicyAssignments.delete('932483');
     const rawResponse = await responsePromise.asResponse();

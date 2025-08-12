@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource zipDownloads', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.zipDownloads.create({ items: [{ id: '12345', type: 'file' }] });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource zipDownloads', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.zipDownloads.create({
       items: [{ id: '12345', type: 'file' }],
@@ -28,7 +28,7 @@ describe('resource zipDownloads', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('status', async () => {
     const responsePromise = client.zipDownloads.status(
       'Lu6fA9Ob-jyysp3AAvMF4AkLEwZwAYbL=tgj2zIC=eK9RvJnJbjJl9rNh2qBgHDpyOCAOhpM=vajg2mKq8Mdd',

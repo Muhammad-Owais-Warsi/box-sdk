@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource authorize', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('request: only required params', async () => {
     const responsePromise = client.authorize.request({ client_id: 'client_id', response_type: 'code' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource authorize', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('request: required and optional params', async () => {
     const response = await client.authorize.request({
       client_id: 'client_id',

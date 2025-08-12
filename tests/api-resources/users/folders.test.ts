@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource folders', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('transfer: only required params', async () => {
     const responsePromise = client.users.folders.transfer('12345', { owned_by: { id: '1232234' } });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource folders', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('transfer: required and optional params', async () => {
     const response = await client.users.folders.transfer('12345', {
       owned_by: { id: '1232234' },

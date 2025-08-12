@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource shieldInformationBarrierSegments', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.shieldInformationBarrierSegments.create({
       name: 'Investment Banking',
@@ -23,7 +23,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.shieldInformationBarrierSegments.create({
       name: 'Investment Banking',
@@ -33,7 +33,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.shieldInformationBarrierSegments.retrieve('3423');
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.shieldInformationBarrierSegments.update('3423');
     const rawResponse = await responsePromise.asResponse();
@@ -57,7 +57,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -73,7 +73,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.shieldInformationBarrierSegments.list({
       shield_information_barrier_id: 'shield_information_barrier_id',
@@ -87,7 +87,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.shieldInformationBarrierSegments.list({
       shield_information_barrier_id: 'shield_information_barrier_id',
@@ -96,7 +96,7 @@ describe('resource shieldInformationBarrierSegments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.shieldInformationBarrierSegments.delete('3423');
     const rawResponse = await responsePromise.asResponse();

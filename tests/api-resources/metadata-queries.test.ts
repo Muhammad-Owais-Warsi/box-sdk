@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource metadataQueries', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('execute: only required params', async () => {
     const responsePromise = client.metadataQueries.execute({
       ancestor_folder_id: '0',
@@ -23,7 +23,7 @@ describe('resource metadataQueries', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('execute: required and optional params', async () => {
     const response = await client.metadataQueries.execute({
       ancestor_folder_id: '0',

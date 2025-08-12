@@ -8,8 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource content', () => {
-  // skipped: tests are disabled for the time being
-  test.skip('download: request options and params are passed correctly', async () => {
+  test('download: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.files.content.download(
@@ -25,7 +24,7 @@ describe('resource content', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('upload: only required params', async () => {
     const responsePromise = client.files.content.upload({
       attributes: { name: 'Photo.png', parent: { id: '124132' } },
@@ -40,7 +39,7 @@ describe('resource content', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('upload: required and optional params', async () => {
     const response = await client.files.content.upload({
       attributes: {
@@ -55,7 +54,7 @@ describe('resource content', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('uploadVersion: only required params', async () => {
     const responsePromise = client.files.content.uploadVersion('12345', {
       attributes: { name: 'Photo 2.0.png' },
@@ -70,7 +69,7 @@ describe('resource content', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('uploadVersion: required and optional params', async () => {
     const response = await client.files.content.uploadVersion('12345', {
       attributes: { name: 'Photo 2.0.png', content_modified_at: '2012-12-12T10:53:43-08:00' },

@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource collaborations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.collaborations.create({
       accessible_by: { type: 'user' },
@@ -24,7 +24,7 @@ describe('resource collaborations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.collaborations.create({
       accessible_by: { type: 'user', id: '23522323', login: 'john@example.com' },
@@ -38,7 +38,7 @@ describe('resource collaborations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.collaborations.retrieve('1234');
     const rawResponse = await responsePromise.asResponse();
@@ -50,7 +50,7 @@ describe('resource collaborations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -58,7 +58,7 @@ describe('resource collaborations', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.collaborations.update('1234', { role: 'editor' });
     const rawResponse = await responsePromise.asResponse();
@@ -70,7 +70,7 @@ describe('resource collaborations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.collaborations.update('1234', {
       role: 'editor',
@@ -80,7 +80,7 @@ describe('resource collaborations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.collaborations.list({ status: 'pending' });
     const rawResponse = await responsePromise.asResponse();
@@ -92,7 +92,7 @@ describe('resource collaborations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.collaborations.list({
       status: 'pending',
@@ -102,7 +102,7 @@ describe('resource collaborations', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.collaborations.delete('1234');
     const rawResponse = await responsePromise.asResponse();

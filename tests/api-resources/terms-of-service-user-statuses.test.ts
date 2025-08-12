@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource termsOfServiceUserStatuses', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.termsOfServiceUserStatuses.create({
       is_accepted: true,
@@ -24,7 +24,7 @@ describe('resource termsOfServiceUserStatuses', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.termsOfServiceUserStatuses.create({
       is_accepted: true,
@@ -33,7 +33,7 @@ describe('resource termsOfServiceUserStatuses', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.termsOfServiceUserStatuses.update('324234', { is_accepted: true });
     const rawResponse = await responsePromise.asResponse();
@@ -45,12 +45,12 @@ describe('resource termsOfServiceUserStatuses', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.termsOfServiceUserStatuses.update('324234', { is_accepted: true });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.termsOfServiceUserStatuses.list({ tos_id: 'tos_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -62,7 +62,7 @@ describe('resource termsOfServiceUserStatuses', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.termsOfServiceUserStatuses.list({ tos_id: 'tos_id', user_id: 'user_id' });
   });

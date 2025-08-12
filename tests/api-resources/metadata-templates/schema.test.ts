@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource schema', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.metadataTemplates.schema.create({
       displayName: 'Product Info',
@@ -23,7 +23,7 @@ describe('resource schema', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.metadataTemplates.schema.create({
       displayName: 'Product Info',
@@ -44,7 +44,7 @@ describe('resource schema', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.metadataTemplates.schema.retrieve('properties', { scope: 'global' });
     const rawResponse = await responsePromise.asResponse();
@@ -56,12 +56,12 @@ describe('resource schema', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.metadataTemplates.schema.retrieve('properties', { scope: 'global' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.metadataTemplates.schema.update('properties', { scope: 'global' });
     const rawResponse = await responsePromise.asResponse();
@@ -73,7 +73,7 @@ describe('resource schema', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.metadataTemplates.schema.update('properties', {
       scope: 'global',
@@ -92,7 +92,7 @@ describe('resource schema', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.metadataTemplates.schema.delete('properties', { scope: 'global' });
     const rawResponse = await responsePromise.asResponse();
@@ -104,7 +104,7 @@ describe('resource schema', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.metadataTemplates.schema.delete('properties', { scope: 'global' });
   });

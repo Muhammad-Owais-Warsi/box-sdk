@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource legalHoldPolicyAssignments', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.legalHoldPolicyAssignments.retrieve('753465');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.legalHoldPolicyAssignments.list({ policy_id: 'policy_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.legalHoldPolicyAssignments.list({
       policy_id: 'policy_id',
@@ -44,7 +44,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('assign: only required params', async () => {
     const responsePromise = client.legalHoldPolicyAssignments.assign({
       assign_to: { id: '6564564', type: 'folder' },
@@ -59,7 +59,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('assign: required and optional params', async () => {
     const response = await client.legalHoldPolicyAssignments.assign({
       assign_to: { id: '6564564', type: 'folder' },
@@ -67,7 +67,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listFileVersionsOnHold', async () => {
     const responsePromise = client.legalHoldPolicyAssignments.listFileVersionsOnHold('753465');
     const rawResponse = await responsePromise.asResponse();
@@ -79,7 +79,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listFileVersionsOnHold: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -91,7 +91,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listFilesOnHold', async () => {
     const responsePromise = client.legalHoldPolicyAssignments.listFilesOnHold('753465');
     const rawResponse = await responsePromise.asResponse();
@@ -103,7 +103,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listFilesOnHold: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -115,7 +115,7 @@ describe('resource legalHoldPolicyAssignments', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('unassign', async () => {
     const responsePromise = client.legalHoldPolicyAssignments.unassign('753465');
     const rawResponse = await responsePromise.asResponse();

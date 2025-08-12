@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource skillInvocations', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.skillInvocations.update('33243242', {
       file: {},
@@ -24,7 +24,7 @@ describe('resource skillInvocations', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.skillInvocations.update('33243242', {
       file: { id: '3243244', type: 'file' },

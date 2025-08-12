@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource oauth2', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('requestToken: only required params', async () => {
     const responsePromise = client.oauth2.requestToken({ grant_type: 'authorization_code' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource oauth2', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('requestToken: required and optional params', async () => {
     const response = await client.oauth2.requestToken({
       grant_type: 'authorization_code',
@@ -41,7 +41,7 @@ describe('resource oauth2', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('revokeToken', async () => {
     const responsePromise = client.oauth2.revokeToken({});
     const rawResponse = await responsePromise.asResponse();

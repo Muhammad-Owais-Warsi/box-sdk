@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource metadataTemplates', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.metadataTemplates.retrieve('f7a9891f');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource metadataTemplates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.metadataTemplates.list({
       metadata_instance_id: '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -34,7 +34,7 @@ describe('resource metadataTemplates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.metadataTemplates.list({
       metadata_instance_id: '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -43,7 +43,7 @@ describe('resource metadataTemplates', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGlobal', async () => {
     const responsePromise = client.metadataTemplates.listGlobal();
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource metadataTemplates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listGlobal: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
