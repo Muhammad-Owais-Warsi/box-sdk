@@ -1175,6 +1175,7 @@ export class NimbusStorage {
   aiAgentDefault: API.AIAgentDefault = new API.AIAgentDefault(this);
   aiAgents: API.AIAgents = new API.AIAgents(this);
 }
+
 NimbusStorage.Authorize = Authorize;
 NimbusStorage.Oauth2 = Oauth2;
 NimbusStorage.Files = Files;
@@ -1229,6 +1230,7 @@ NimbusStorage.IntegrationMappings = IntegrationMappings;
 NimbusStorage.AI = AI;
 NimbusStorage.AIAgentDefault = AIAgentDefault;
 NimbusStorage.AIAgents = AIAgents;
+
 export declare namespace NimbusStorage {
   export type RequestOptions = Opts.RequestOptions;
 
