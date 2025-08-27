@@ -292,10 +292,7 @@ export interface Folder extends FilesAPI.FolderMini {
   folder_upload_email?: Folder.FolderUploadEmail | null;
 
   /**
-   * A page of the items that are in the folder.
-   *
-   * This field can only be requested when querying a folder's information, not when
-   * querying a folder's items.
+   * A list of files, folders, and web links in their mini representation.
    */
   item_collection?: Folder.ItemCollection;
 
@@ -410,10 +407,7 @@ export namespace Folder {
   }
 
   /**
-   * A page of the items that are in the folder.
-   *
-   * This field can only be requested when querying a folder's information, not when
-   * querying a folder's items.
+   * A list of files, folders, and web links in their mini representation.
    */
   export interface ItemCollection extends FoldersAPI.Items {}
 
