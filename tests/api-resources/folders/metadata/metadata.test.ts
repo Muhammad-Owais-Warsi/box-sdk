@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource metadata', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('createMetadataInstance: only required params', async () => {
     const responsePromise = client.folders.metadata.createMetadataInstance('properties', {
       folder_id: '12345',
@@ -23,7 +23,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('createMetadataInstance: required and optional params', async () => {
     const response = await client.folders.metadata.createMetadataInstance('properties', {
       folder_id: '12345',
@@ -32,7 +32,7 @@ describe('resource metadata', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getMetadataInstance: only required params', async () => {
     const responsePromise = client.folders.metadata.getMetadataInstance('properties', {
       folder_id: '12345',
@@ -47,7 +47,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getMetadataInstance: required and optional params', async () => {
     const response = await client.folders.metadata.getMetadataInstance('properties', {
       folder_id: '12345',
@@ -55,7 +55,7 @@ describe('resource metadata', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listMetadata', async () => {
     const responsePromise = client.folders.metadata.listMetadata('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -67,7 +67,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('removeMetadataInstance: only required params', async () => {
     const responsePromise = client.folders.metadata.removeMetadataInstance('properties', {
       folder_id: '12345',
@@ -82,7 +82,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('removeMetadataInstance: required and optional params', async () => {
     const response = await client.folders.metadata.removeMetadataInstance('properties', {
       folder_id: '12345',
@@ -90,7 +90,7 @@ describe('resource metadata', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateMetadataInstance: only required params', async () => {
     const responsePromise = client.folders.metadata.updateMetadataInstance('properties', {
       folder_id: '12345',
@@ -105,7 +105,7 @@ describe('resource metadata', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateMetadataInstance: required and optional params', async () => {
     const response = await client.folders.metadata.updateMetadataInstance('properties', {
       folder_id: '12345',

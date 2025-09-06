@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource teams', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.integrationMappings.teams.create({
       box_item: { id: '42037322', type: 'folder' },
@@ -28,7 +28,7 @@ describe('resource teams', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.integrationMappings.teams.create({
       box_item: { id: '42037322', type: 'folder' },
@@ -41,7 +41,7 @@ describe('resource teams', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.integrationMappings.teams.update('11235432');
     const rawResponse = await responsePromise.asResponse();
@@ -53,7 +53,7 @@ describe('resource teams', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -65,7 +65,7 @@ describe('resource teams', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.integrationMappings.teams.list();
     const rawResponse = await responsePromise.asResponse();
@@ -77,7 +77,7 @@ describe('resource teams', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -93,7 +93,7 @@ describe('resource teams', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.integrationMappings.teams.delete('11235432');
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource signTemplates', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.signTemplates.retrieve('123075213-7d117509-8f05-42e4-a5ef-5190a319d41d');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource signTemplates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.signTemplates.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource signTemplates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

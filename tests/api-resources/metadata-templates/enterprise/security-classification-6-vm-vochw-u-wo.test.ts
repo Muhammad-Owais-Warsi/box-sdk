@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource securityClassification6VmVochwUWo', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listClassifications', async () => {
     const responsePromise =
       client.metadataTemplates.enterprise.securityClassification6VmVochwUWo.listClassifications();

@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource legalHoldPolicies', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.legalHoldPolicies.create({ policy_name: 'Sales Policy' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource legalHoldPolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.legalHoldPolicies.create({
       policy_name: 'Sales Policy',
@@ -31,7 +31,7 @@ describe('resource legalHoldPolicies', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.legalHoldPolicies.retrieve('324432');
     const rawResponse = await responsePromise.asResponse();
@@ -43,7 +43,7 @@ describe('resource legalHoldPolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.legalHoldPolicies.update('324432');
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource legalHoldPolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -71,7 +71,7 @@ describe('resource legalHoldPolicies', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.legalHoldPolicies.list();
     const rawResponse = await responsePromise.asResponse();
@@ -83,7 +83,7 @@ describe('resource legalHoldPolicies', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -94,7 +94,7 @@ describe('resource legalHoldPolicies', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.legalHoldPolicies.delete('324432');
     const rawResponse = await responsePromise.asResponse();

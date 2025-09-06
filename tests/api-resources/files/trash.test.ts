@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource trash', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.files.trash.retrieve('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource trash', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -28,7 +28,7 @@ describe('resource trash', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.files.trash.delete('12345');
     const rawResponse = await responsePromise.asResponse();

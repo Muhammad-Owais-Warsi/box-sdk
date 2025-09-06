@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource devicePinners', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.devicePinners.retrieve('2324234');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource devicePinners', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.devicePinners.delete('2324234');
     const rawResponse = await responsePromise.asResponse();

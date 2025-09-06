@@ -11,7 +11,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:stainless-sdks/nimbus-storage-typescript.git
+npm install git+ssh://git@github.com:Muhammad-Owais-Warsi/box-sdk.git
 ```
 
 > [!NOTE]
@@ -25,9 +25,7 @@ The full API of this library can be found in [api.md](api.md).
 ```js
 import NimbusStorage from 'nimbus-storage';
 
-const client = new NimbusStorage({
-  apiKey: process.env['NIMBUS_STORAGE_API_KEY'], // This is the default and can be omitted
-});
+const client = new NimbusStorage();
 
 const response = await client.authorize.request({ client_id: 'REPLACE_ME', response_type: 'code' });
 ```
@@ -40,9 +38,7 @@ This library includes TypeScript definitions for all request params and response
 ```ts
 import NimbusStorage from 'nimbus-storage';
 
-const client = new NimbusStorage({
-  apiKey: process.env['NIMBUS_STORAGE_API_KEY'], // This is the default and can be omitted
-});
+const client = new NimbusStorage();
 
 const params: NimbusStorage.AuthorizeRequestParams = { client_id: 'REPLACE_ME', response_type: 'code' };
 const response: string = await client.authorize.request(params);
@@ -384,7 +380,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/nimbus-storage-typescript/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/Muhammad-Owais-Warsi/box-sdk/issues) with questions, bugs, or suggestions.
 
 ## Requirements
 

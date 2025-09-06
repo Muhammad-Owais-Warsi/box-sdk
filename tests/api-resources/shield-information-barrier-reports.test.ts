@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource shieldInformationBarrierReports', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.shieldInformationBarrierReports.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource shieldInformationBarrierReports', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -31,7 +31,7 @@ describe('resource shieldInformationBarrierReports', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.shieldInformationBarrierReports.retrieve('3423');
     const rawResponse = await responsePromise.asResponse();
@@ -43,7 +43,7 @@ describe('resource shieldInformationBarrierReports', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.shieldInformationBarrierReports.list({
       shield_information_barrier_id: 'shield_information_barrier_id',
@@ -57,7 +57,7 @@ describe('resource shieldInformationBarrierReports', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.shieldInformationBarrierReports.list({
       shield_information_barrier_id: 'shield_information_barrier_id',

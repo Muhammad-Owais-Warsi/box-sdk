@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource sharedItems', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.sharedItems.retrieve({
       boxapi: 'shared_link=[link]&shared_link_password=[password]',
@@ -22,7 +22,7 @@ describe('resource sharedItems', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.sharedItems.retrieve({
       boxapi: 'shared_link=[link]&shared_link_password=[password]',

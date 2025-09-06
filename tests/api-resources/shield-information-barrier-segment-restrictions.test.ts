@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource shieldInformationBarrierSegmentRestrictions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.shieldInformationBarrierSegmentRestrictions.create({
       restricted_segment: {},
@@ -24,7 +24,7 @@ describe('resource shieldInformationBarrierSegmentRestrictions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.shieldInformationBarrierSegmentRestrictions.create({
       restricted_segment: { id: '1910967', type: 'shield_information_barrier_segment' },
@@ -34,7 +34,7 @@ describe('resource shieldInformationBarrierSegmentRestrictions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.shieldInformationBarrierSegmentRestrictions.retrieve('4563');
     const rawResponse = await responsePromise.asResponse();
@@ -46,7 +46,7 @@ describe('resource shieldInformationBarrierSegmentRestrictions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.shieldInformationBarrierSegmentRestrictions.list({
       shield_information_barrier_segment_id: 'shield_information_barrier_segment_id',
@@ -60,7 +60,7 @@ describe('resource shieldInformationBarrierSegmentRestrictions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.shieldInformationBarrierSegmentRestrictions.list({
       shield_information_barrier_segment_id: 'shield_information_barrier_segment_id',
@@ -69,7 +69,7 @@ describe('resource shieldInformationBarrierSegmentRestrictions', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.shieldInformationBarrierSegmentRestrictions.delete('4563');
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource securityClassification6VmVochwUWo', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('addClassification', async () => {
     const responsePromise =
       client.folders.metadata.enterprise.securityClassification6VmVochwUWo.addClassification('12345');
@@ -21,7 +21,7 @@ describe('resource securityClassification6VmVochwUWo', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('addClassification: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -33,7 +33,7 @@ describe('resource securityClassification6VmVochwUWo', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('getClassification', async () => {
     const responsePromise =
       client.folders.metadata.enterprise.securityClassification6VmVochwUWo.getClassification('12345');
@@ -46,7 +46,7 @@ describe('resource securityClassification6VmVochwUWo', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('removeClassification', async () => {
     const responsePromise =
       client.folders.metadata.enterprise.securityClassification6VmVochwUWo.removeClassification('12345');
@@ -59,7 +59,7 @@ describe('resource securityClassification6VmVochwUWo', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateClassification: only required params', async () => {
     const responsePromise =
       client.folders.metadata.enterprise.securityClassification6VmVochwUWo.updateClassification('12345', {
@@ -74,7 +74,7 @@ describe('resource securityClassification6VmVochwUWo', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('updateClassification: required and optional params', async () => {
     const response =
       await client.folders.metadata.enterprise.securityClassification6VmVochwUWo.updateClassification(

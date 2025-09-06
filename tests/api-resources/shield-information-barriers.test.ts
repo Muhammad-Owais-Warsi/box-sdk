@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource shieldInformationBarriers', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.shieldInformationBarriers.create({ enterprise: {} });
     const rawResponse = await responsePromise.asResponse();
@@ -20,14 +20,14 @@ describe('resource shieldInformationBarriers', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.shieldInformationBarriers.create({
       enterprise: { id: '1910967', type: 'enterprise' },
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.shieldInformationBarriers.retrieve('1910967');
     const rawResponse = await responsePromise.asResponse();
@@ -39,7 +39,7 @@ describe('resource shieldInformationBarriers', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.shieldInformationBarriers.list();
     const rawResponse = await responsePromise.asResponse();
@@ -51,7 +51,7 @@ describe('resource shieldInformationBarriers', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -62,7 +62,7 @@ describe('resource shieldInformationBarriers', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('changeStatus: only required params', async () => {
     const responsePromise = client.shieldInformationBarriers.changeStatus({
       id: '1910967',
@@ -77,7 +77,7 @@ describe('resource shieldInformationBarriers', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('changeStatus: required and optional params', async () => {
     const response = await client.shieldInformationBarriers.changeStatus({
       id: '1910967',

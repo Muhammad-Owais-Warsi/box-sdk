@@ -8,7 +8,7 @@ const client = new NimbusStorage({
 });
 
 describe('resource versions', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.files.versions.retrieve('1234', { file_id: '12345' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource versions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.files.versions.retrieve('1234', { file_id: '12345', fields: ['string'] });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.files.versions.list('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource versions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -49,7 +49,7 @@ describe('resource versions', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.files.versions.delete('1234', { file_id: '12345' });
     const rawResponse = await responsePromise.asResponse();
@@ -61,12 +61,12 @@ describe('resource versions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.files.versions.delete('1234', { file_id: '12345', 'if-match': '1' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('promote', async () => {
     const responsePromise = client.files.versions.promote('12345');
     const rawResponse = await responsePromise.asResponse();
@@ -78,7 +78,7 @@ describe('resource versions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('promote: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -90,7 +90,7 @@ describe('resource versions', () => {
     ).rejects.toThrow(NimbusStorage.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('restore: only required params', async () => {
     const responsePromise = client.files.versions.restore('1234', { file_id: '12345' });
     const rawResponse = await responsePromise.asResponse();
@@ -102,7 +102,7 @@ describe('resource versions', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('restore: required and optional params', async () => {
     const response = await client.files.versions.restore('1234', { file_id: '12345', trashed_at: null });
   });
